@@ -17,3 +17,11 @@ print(cadena.find('1'))
 #El metodo upper sirve para convertir la cadena de texto en mayusculas
 cadenaMinuscula = "este texto se convertira en mayuscula"
 print(cadenaMinuscula.upper())
+
+#Question 2
+name = "Lizz"
+print(name[0:2])
+
+#question 3
+var = "01234567"
+print(var[::2])

@@ -2,7 +2,7 @@
 my_first_variable = 5
 x = 40
 
-total = x * my_first_variable
+total = 3 + 2 * 2
 total2 = x - my_first_variable
 total3 = my_first_variable - x
 total4 = total3 / x
