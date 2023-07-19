@@ -40,6 +40,62 @@ print(str(array[2]) + ' ' + 'tamaño del arreglo[2]: ' + str(len(array[2])))
 print(str(array[2][2]) + ' ' + 'tamaño del arreglo[2][2]: ' + str(len(array[2][2])))
 
 #Listas
+#Las listas son muy similares a los arreglos.
+L = ["Michael Jackson", 10.1, 1982]
 
+print("Lista: " + str(L))
 
+#En las Listas se puede ocupar las funciones append(), extend() para añadir nuevos elementos pero funcionan un poco diferente
+#extend() extiende la lista agregando el argumento en cada uno de los index de la lista
+L.extend(["Hola", 2023])
 
+print("Extend: " + str(L))
+
+#append() añade la lista de argumentos igual que el extend(), la diferencia es que lo coloca en el siguiente index de la lista
+L.append(["Adios", 1994])
+
+print("Append: " + str(L))
+
+#Se puede sustituir elementos dentro de la lista indicando el index que se requiere sustituir
+
+L[0] = "Messi"
+print("Elemento en la posición [0] sustituido: \n" + 'Nueva Lista: ' + str(L))
+
+#Tambien se pueden eliminar elementos dentro de la lista con la función del()
+
+del(L[5])
+
+print("Elemento en la posición 5 eliminado \nNueva Lista: " + str(L))
+
+#La función split() sirve para convertir una cadena de texto en una lista
+
+cadena = "Hard Rock"
+nuevaLista = cadena.split()
+print("Cadena: " + '"' + cadena + '"\n' + "Nueva Lista: " + str(nuevaLista) )
+
+#Tambien sle puede indicar un elemento especfico para empezar a delimitar la lista
+
+cadena = "A,E,I,O,U"
+listaVocales = cadena.split(',')
+print("Cadena: " + '"' + cadena + '"\n' + "Nueva Lista: " + str(listaVocales) )
+
+#Si referencias a la misma lista esta sera afectada en ambos lados
+
+A = [1,2,"hola"]
+B = A
+B[2] = "adios"
+print("Lista A: " + str(A) + "\n Lista B: " + str(B))
+A[2] = "messi"
+print("Lista A: " + str(A) + "\n Lista B: " + str(B))
+
+#La mejor opcion para no alterar la lista original es clonandola, para que cada uno tenga una referencia distinta
+print("Clonando")
+A = [1,2,"hola"]
+B = A[:] #Clonando lista
+B[2] = "adios"
+print("Lista A: " + str(A) + "\n Lista B: " + str(B))
+A[2] = "messi"
+print("Lista A: " + str(A) + "\n Lista B: " + str(B))
+
+#Para mas ayuda con respecto a las listas puedes ocupar la funciòn help()
+#help(A) #descomenta esta linea para observar la ayuda
