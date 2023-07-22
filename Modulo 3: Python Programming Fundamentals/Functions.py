@@ -68,3 +68,19 @@ Date = 2023
 
 print(thriller())
 print(Date)
+
+def acdc(y):
+    print(Rating)
+    return (Rating + y)
+
+Rating = 9
+z=acdc(1)
+print(Rating)
+
+def PinkFloyd():
+    global ClaimedSales #Podemos indicar dentro de las funciones que una variable es global
+    ClaimedSales = "41 millones"
+    return ClaimedSales
+
+PinkFloyd()
+print(ClaimedSales)
