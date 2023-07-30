@@ -50,5 +50,10 @@ while(opcion != 'Q'):
         opcion = 'Q'
         print("Fin del proceso")
 
-
+"""
+Existen mas modelos para manejar en open:
+r+: leer y escribir. No puedes truncar el archivo
+w+: escribir y leer. Puedes truncar el archivo
+a+: Añadir y leer.
+"""
 
